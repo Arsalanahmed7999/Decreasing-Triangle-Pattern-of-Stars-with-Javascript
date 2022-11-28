@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    height: 720px;
+    width: 100vw;
+    background-color: #000;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 400px;
+    width: 800px;
+    box-shadow: 3px 3px 4px white;
+
+}
+
+.heading, .triangle{
+    margin: 30px 0px;
+    color: rgb(10, 10, 10);
+    text-shadow: 2px 2px 3px antiquewhite;
+}
+.triangle{
+    animation: trans 1s ease-in-out infinite forwards;
+}
+
+@keyframes trans {
+    0%{
+opacity: 0;
+    }
+    100%{
+opacity: 1;
+    }
+}
